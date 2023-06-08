@@ -17,5 +17,5 @@ text_features = vectorizer.transform([waste])
 category = model.predict(text_features)[0]
 st.success(f"Our model predicted this waste to be of type : {category}")
 
-if category == 'paper':
+if category == 'Paper':
     st.success("Hurray ! This waste can be recycled.")

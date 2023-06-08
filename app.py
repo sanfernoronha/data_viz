@@ -15,4 +15,4 @@ text_features = vectorizer.transform([waste])
 
 # Predict the category
 category = model.predict(text_features)[0]
-st.text(category)
+st.success(f"Our model predicted this waste to be of type : {category}")

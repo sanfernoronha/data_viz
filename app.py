@@ -9,7 +9,7 @@ with open('model.pkl', 'rb') as f:
 with open('vectors.pkl', 'rb') as f:
     vectorizer = pickle.load(f)
     
-waste = st.input_text("Enter Waste: ")    
+waste = st.text_input("Enter Waste: ")    
    
 text_features = vectorizer.transform([waste])
 
